@@ -11,7 +11,7 @@ const Head = () => {
   useEffect(() => {
     axios
       .get(
-        `https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=5a9b10de4117b3e623755f73e8fab5b2&text=${query}&per_page=20&page=10&format=json&nojsoncallback=1`
+        `https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=5a9b10de4117b3e623755f73e8fab5b2&text=${query}&format=json&nojsoncallback=1`
       )
       .then((responce) => {
         setSrh(responce.data.photos);
